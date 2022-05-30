@@ -1,0 +1,122 @@
+<!-- Don't use the html enter shortcut for the boiler plate bc it doesn't include viewport.
+    Use the ! tab shortcut which is the beginning of the <!Doctype html> tag and does include viewport.
+    Just found thi on my own so that's kind of cool ha.-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- The head of HTML is the part that holds information about the page and tells the browser how it should handle the page -->
+<head>
+  <!-- This holds extra data for your html document. uft-8 is very important so that your code is always rendered correctly-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Victor's Personal Site</title> <!-- This will show the title on the tab of the site above search bar -->
+</head>
+
+<body>
+  <!-- Full description of a table is below, but we decided to use html for arranging some things up here
+      since we haven't reviewed css yet -->
+  <table cellspacing="20">
+    <tr>
+      <td>  <!-- with an img tag you need a src to know where the pic is coming from. The alt attribute
+            is in case the photo doesn't show up for some reason you can have an alternative text describing it
+            the alt also helps with seo if you use key words that describe the photo. In order to not have
+            a dependency on other entities servers you can also upload a photo into your project. Alls you do
+            is paste a photo in the folder where your project is located. Now you refer to the path where that
+            photo is located, so if it's in the same folder as your project it would look something like photo.png
+            If you had it in a differenet folder it would look like folder/photo.png-->
+        <img src="images/vics-profile-pic.png" alt="Victor's profile picture"></td>
+      <td><h1>Victor Anderson</h1>
+      <!-- <p></p> tag is for a paragraph -->
+      <!-- <i></i> and <em></em> both make italic text, BUT em tells the browser that the text is to be stressed,
+           while i just styles, so best practice is to use em.
+           Same goes for <b></b> and <strong></strong> these are used for bolding words, but strong
+           tells the browser this word is more important than the rest, while b just styles
+
+           The a tag stands for anchor and is for anchoring hyperlinks to text on your page.
+           A lot of the time it looks like this <a href="link-here">text to be linked here</a> -->
+      <p><em><strong><a href="https://hbr.org/2022/05/what-is-web3">Web3</a></strong> investor and creator</em></p>
+      <p>I am an investor of many things, but web3 is my passion. Being in the military had taught me how and when to follow or lead (a good leader must also be a good follower). It also taught me that I didn't want to make a career out of it, so I started trying to figure out what I would do once I got out. I've always been entreprenuial so I ... TO BE CONTINUED</p></td>
+    </tr>
+  </table>
+  <hr size="2" noshade>
+  <h3>Education</h3>
+  <!-- For an unordered list you have to open with <ul></ul> and every list item is labeled with <li></li>
+      this will list the items with bullet points. For an ordered list you open with <ol></ol> and label
+      list items the same, this will list the items in a numbered order. If you want to indent more
+      kind of like notes you just nest another ul or ol inside the parent ul or ol. You can also
+      nest an ol in a ul and vice versa. You can use attributes to start at a certain number or use
+      roman numerals and other stuff too -->
+  <ul>
+    <li>Holyoke Highschool</li>
+    <li>Basic Military Training</li>
+    <li>Security Forces Technical School</li>
+    <li>Self taught market analysis and investing</li>
+    <li>Self taught web3, blockchain, crypto</li>
+    <li>The Complete Web Development Bootcamp taught by Dr. Angela Yu</li>
+  </ul>
+  <!-- HTML table: these can get very complicated just because there's so many things you can do with them
+       tr is table row, td is table data / cell
+
+       Tables also have headers body and footers; thead = table head, tbody = table body, tfoot = table footer
+       th = table header cell which is the words and are nested in thead, tr
+
+       Side Note: Depricated means that a certain type of coding is no longer used, its represented
+                  on MDN with a thumbs down, so anything with a thumbs down on MDN is not reccomended-->
+  <hr>
+  <h3>Work Experience</h3>
+  <table cellspacing="10">
+    <thead>
+      <tr>
+        <th>Dates</th>
+        <th>Work</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>2016-2022</td>
+      <td>USAF Security Forces</td>
+    </tr>
+    <tr>
+      <td>2020</td>
+      <td>Investor</td>
+    </tr>
+    <tr>
+      <td>2022</td>
+      <td>Web3 and Smart Contract Developer</td>
+    </tr>
+  </table>
+  <!-- Table of my skills ranked with star emojis
+      This is not a practical way of doing this but we're just doing it
+      to practice tables -->
+  <hr>
+  <h3>Skills</h3>
+  <table cellspacing="10">
+    <tr>
+      <td>Web3 / Blockchain</td>
+      <td>★★★★★</td>
+    </tr>
+    <tr>
+      <td>Cryptocurrencies</td>
+      <td>★★★★★</td>
+    </tr>
+    <tr>
+      <td>Communication</td>
+      <td>★★★★★</td>
+    </tr>
+    <tr>
+      <td>Javascript</td>
+      <td>★★</td>
+    </tr>
+    <tr>
+      <td>Solidity</td>
+      <td>★</td>
+    </tr>
+  </table>
+  <hr>
+  <a href="hobbies.html">My Hobbies</a>
+  <br>
+  <a href="contact-me.html">Contact Me</a>
+</body>
+
+<!-- Side note: cmd cltr space opens the emoji keyboard -->
+
+</html>
